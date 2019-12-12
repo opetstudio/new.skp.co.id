@@ -638,7 +638,7 @@ contact
   background-color: transparent;
   border-radius: 0px;
   color: #be9e21 !important;
-  border-color: #be9e21;
+  border-color: #a5a39b;
 }
 
 .form-control:focus {
@@ -661,8 +661,8 @@ contact
 }
 
 #sendmessage {
-  color: green;
-  border: 1px solid green;
+  color: #be9e21;
+  border: 1px solid #be9e21;
   display: none;
   text-align: center;
   padding: 15px;
@@ -671,9 +671,9 @@ contact
 }
 
 #errormessage {
-  color: red;
+  color: #be9e21;
   display: none;
-  border: 1px solid red;
+  border: 1px solid #be9e21;
   text-align: center;
   padding: 15px;
   font-weight: 600;
