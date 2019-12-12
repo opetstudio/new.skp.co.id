@@ -21,6 +21,44 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+    	@keyframes slidy {
+		0% { left: 0%; }
+		20% { left: 0%; }
+		25% { left: -100%; }
+		45% { left: -100%; }
+		50% { left: -200%; }
+		70% { left: -200%; }
+		75% { left: -300%; }
+		95% { left: -300%; }
+		100% { left: -400%; }
+		}
+
+		body { margin: 0; } 
+		div#slider { overflow: hidden; }
+		div#slider figure img { width: 20%; float: left; margin-bottom: 30px;}
+		div#slider figure { 
+		  position: relative;
+		  width: 500%;
+		  margin: 0;
+		  left: 0;
+		  text-align: left;
+		  font-size: 0;
+		  animation: 30s slidy infinite; 
+		}
+    </style>
+    <script type="text/javascript">
+    	$("#slideshow > div:gt(0)").hide();
+		setInterval(function() {
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		}, 3000);
+    </script>
   </head>
   <body>
 	<div class="bg-top navbar-light d-flex flex-column-reverse" >
@@ -94,7 +132,26 @@ Presently, SKP is a registered Supplier to the Indonesian Navy and Army Headquar
 The management and staffs of SKP are commited to become your trusted, and reliable business.
 
 </p>
-						  	<div class="img" style="background-image: url(images/about-1.png);"></div>
+						  	
+							<!-- Projects -->
+									<!-- <div id="slideshow">
+									   <div>
+									     <img class="gambar" src="images/About/atgm.jpg">
+									   </div>
+									   <div>
+									     <img class="gambar" src="images/About/Heli.jpg">
+									   </div>
+									</div> -->
+									<!-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> -->
+									<div id="slider">
+									<figure>
+										<img class="gambar" src="images/About/atgm.jpg">
+										<img class="gambar" src="images/About/Heli.jpg">
+									</figure>
+									</div>
+							<!-- Project -->
+
+
 						  </div>
 						  <div class="tab-pane container p-0 fade" id="about-2">
 						  	<h3><a href="#">About SKP / Commisoners</a></h3>
@@ -177,6 +234,7 @@ We, the Board of Commissioners, Directors and the entire management are ready to
 						  	<h3><a href="#">Organizational Strcture</a></h3>
 						  	<p>SKP Feels confident in affording our clients, especially for government, millitary, and law enforcement officers of ROI, of all their critical needs in a form of suitable and right solutions. This strong feeling of always eager to fulfill client’s need and provide the best service as much as possible is being part of our corporate values and cultures</p>
 						  	<div class="img-organi" style="background-image: url(images/organization.png); background-size: auto; background-repeat: no-repeat;"></div>
+						  			
 						  </div>
 						  <!--
 						  <div class="tab-pane container p-0 fade" id="about-5">
