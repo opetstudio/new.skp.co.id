@@ -113,6 +113,7 @@ Jakarta Selatan 12920</p>
           <div class="col-md-10 mb-md-5">
           <div class="contact-form">
             <h2 class="text-center">If you got any questions <br>please do not hesitate to send us a message</h2>
+            <div class="border p-5 contact-form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
             <form action="insert.php" method="post" rolerole="form" class="contactForm">
@@ -135,6 +136,7 @@ Jakarta Selatan 12920</p>
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
+            </div>
           </div>
           </div>
         </div>
